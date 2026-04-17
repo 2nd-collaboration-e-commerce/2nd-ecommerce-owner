@@ -1,0 +1,52 @@
+.detail-page { background: #f1f3f6; min-height: 100vh; padding: 16px; }
+.detail-container { max-width: 1300px; margin: 0 auto; display: flex; gap: 24px; background: #fff; border-radius: 4px; padding: 24px; }
+.detail-loading { display: flex; justify-content: center; align-items: center; min-height: 60vh; }
+.spinner { width: 40px; height: 40px; border: 4px solid #e0e0e0; border-top-color: #2874f0; border-radius: 50%; animation: spin 0.8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.detail-images { width: 400px; flex-shrink: 0; position: sticky; top: 80px; align-self: flex-start; }
+.thumbnails { display: flex; flex-direction: column; gap: 8px; float: left; margin-right: 12px; }
+.thumb { width: 60px; height: 60px; object-fit: contain; border: 2px solid #e0e0e0; border-radius: 4px; cursor: pointer; padding: 4px; }
+.thumb.active { border-color: #2874f0; }
+.main-img-wrap { overflow: hidden; display: flex; justify-content: center; }
+.main-img { max-width: 300px; max-height: 350px; object-fit: contain; }
+.detail-actions { display: flex; gap: 12px; margin-top: 24px; clear: both; }
+.action-btn { flex: 1; padding: 14px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 8px; transition: opacity 0.2s; }
+.action-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.cart-action { background: #ff9f00; color: #fff; }
+.buy-action { background: #fb641b; color: #fff; }
+.detail-info { flex: 1; }
+.detail-brand { color: #878787; font-size: 14px; margin: 0 0 6px; }
+.detail-name { font-size: 22px; font-weight: 600; color: #212121; margin: 0 0 12px; }
+.detail-rating { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.rating-chip { background: #388e3c; color: #fff; padding: 3px 8px; border-radius: 3px; font-size: 13px; font-weight: 700; display: flex; align-items: center; gap: 3px; }
+.rating-text { color: #878787; font-size: 14px; }
+.fk-assured { background: #2874f0; color: #fff; padding: 2px 8px; border-radius: 3px; font-size: 12px; }
+.detail-price { display: flex; align-items: baseline; gap: 12px; margin-bottom: 16px; }
+.d-price { font-size: 30px; font-weight: 700; color: #212121; }
+.d-original { font-size: 18px; color: #878787; text-decoration: line-through; }
+.d-off { font-size: 18px; color: #388e3c; font-weight: 600; }
+.out-of-stock { color: #f44336; font-weight: 700; font-size: 15px; }
+.low-stock { color: #ff9f00; font-weight: 700; font-size: 13px; }
+.detail-section { margin: 20px 0; padding-top: 16px; border-top: 1px solid #f0f0f0; }
+.detail-section h3 { font-size: 16px; font-weight: 700; color: #212121; margin: 0 0 12px; }
+.highlights-list { padding-left: 20px; color: #333; }
+.highlights-list li { margin-bottom: 6px; font-size: 14px; }
+.detail-description { color: #555; font-size: 14px; line-height: 1.7; }
+.spec-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.spec-table td { padding: 8px 12px; border-bottom: 1px solid #f0f0f0; }
+.spec-table td:first-child { color: #878787; width: 35%; background: #fafafa; }
+.review-item { padding: 12px 0; border-bottom: 1px solid #f0f0f0; }
+.review-header { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.review-rating-chip { background: #388e3c; color: #fff; padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 700; display: flex; align-items: center; gap: 2px; }
+.reviewer-name { font-weight: 600; font-size: 14px; }
+.review-comment { color: #555; font-size: 14px; }
+.no-reviews { color: #878787; font-size: 14px; }
+.review-form { margin-top: 20px; padding: 16px; background: #f9f9f9; border-radius: 4px; }
+.review-form h4 { margin: 0 0 12px; font-size: 15px; }
+.rating-select { display: flex; gap: 4px; margin-bottom: 12px; }
+.star-btn { background: none; border: none; font-size: 28px; cursor: pointer; color: #ccc; transition: color 0.1s; }
+.star-btn.filled { color: #ff9f00; }
+.review-textarea { width: 100%; padding: 10px; border: 1px solid #e0e0e0; border-radius: 4px; font-size: 14px; resize: vertical; outline: none; box-sizing: border-box; }
+.review-textarea:focus { border-color: #2874f0; }
+.submit-review-btn { margin-top: 10px; padding: 10px 24px; background: #2874f0; color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: 600; }
+@media (max-width: 768px) { .detail-container { flex-direction: column; } .detail-images { width: 100%; position: static; } .thumbnails { flex-direction: row; float: none; margin-right: 0; margin-bottom: 12px; } }

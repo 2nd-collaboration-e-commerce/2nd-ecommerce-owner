@@ -1,0 +1,42 @@
+.od-page { background: #f1f3f6; min-height: 100vh; padding: 16px; }
+.od-container { max-width: 1100px; margin: 0 auto; }
+.od-loading { display: flex; justify-content: center; align-items: center; min-height: 60vh; }
+.spinner { width: 40px; height: 40px; border: 4px solid #e0e0e0; border-top-color: #2874f0; border-radius: 50%; animation: spin 0.8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.od-header { display: flex; justify-content: space-between; align-items: flex-start; background: #fff; border-radius: 4px; padding: 20px 24px; margin-bottom: 16px; }
+.od-header h2 { font-size: 20px; color: #212121; margin: 0 0 4px; }
+.od-header p { color: #878787; font-size: 14px; margin: 0; }
+.od-status-badge { display: flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 700; }
+.od-status-badge.processing { background: #fff8e1; color: #ff9f00; }
+.od-status-badge.shipped { background: #e3f2fd; color: #2874f0; }
+.od-status-badge.delivered { background: #e8f5e9; color: #388e3c; }
+.od-status-badge.cancelled { background: #fce4ec; color: #f44336; }
+.od-progress { background: #fff; border-radius: 4px; padding: 24px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center; gap: 0; }
+.progress-step { display: flex; flex-direction: column; align-items: center; gap: 8px; position: relative; }
+.step-circle { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; background: #e0e0e0; color: #878787; transition: all 0.3s; }
+.progress-step.done .step-circle { background: #388e3c; color: #fff; }
+.progress-step span { font-size: 13px; color: #878787; font-weight: 500; }
+.progress-step.done span { color: #388e3c; }
+.step-line { width: 120px; height: 3px; background: #e0e0e0; position: absolute; left: 36px; top: 16px; }
+.step-line.done { background: #388e3c; }
+.od-body { display: flex; gap: 16px; }
+.od-main { flex: 1; display: flex; flex-direction: column; gap: 16px; }
+.od-sidebar { width: 300px; flex-shrink: 0; display: flex; flex-direction: column; gap: 16px; }
+.od-card { background: #fff; border-radius: 4px; padding: 20px; }
+.od-card h3 { font-size: 16px; font-weight: 700; color: #212121; margin: 0 0 16px; padding-bottom: 10px; border-bottom: 1px solid #f0f0f0; }
+.od-item { display: flex; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+.od-item img { width: 80px; height: 80px; object-fit: contain; border: 1px solid #f0f0f0; border-radius: 4px; }
+.od-item-name { font-size: 14px; color: #212121; margin-bottom: 4px; }
+.od-item-price { font-size: 13px; color: #878787; }
+.od-item-total { margin-left: auto; font-size: 15px; font-weight: 700; color: #212121; white-space: nowrap; }
+.addr-name { font-weight: 700; font-size: 15px; margin-bottom: 4px; }
+.od-card p { color: #555; font-size: 14px; margin: 4px 0; }
+.od-price-row { display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 14px; }
+.od-price-row.total { font-size: 16px; font-weight: 700; color: #212121; padding-top: 10px; border-top: 1px solid #e8e8e8; }
+.free { color: #388e3c; font-weight: 600; }
+.pay-status { font-size: 15px; font-weight: 700; }
+.pay-status.paid { color: #388e3c; }
+.pay-status.pending { color: #ff9f00; }
+.pay-id { font-size: 12px; color: #878787; margin-top: 4px; word-break: break-all; }
+.back-orders-btn { display: block; text-align: center; padding: 10px; background: #2874f0; color: #fff; text-decoration: none; border-radius: 4px; font-weight: 600; }
+@media (max-width: 768px) { .od-body { flex-direction: column; } .od-sidebar { width: 100%; } .step-line { width: 60px; } }

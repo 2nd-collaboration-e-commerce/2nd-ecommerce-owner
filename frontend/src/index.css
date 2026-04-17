@@ -1,0 +1,7 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Roboto', 'Segoe UI', Arial, sans-serif; background: #f1f3f6; color: #333; }
+@keyframes spin { to { transform: rotate(360deg); } }
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #bbb; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #999; }
